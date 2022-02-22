@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище SvetMill.GraphModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TUBA26032020-12052020.dbo.IPMPM" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="IPMPM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="KEYF" Type="int" />
+          <Property Name="DATAT" Type="datetime" />
+          <Property Name="TAKT" Type="int" />
+          <Property Name="IZM" Type="int" />
+          <Property Name="F1" Type="smallint" />
+          <Property Name="F2" Type="smallint" />
+          <Property Name="F3" Type="smallint" />
+          <Property Name="F4" Type="smallint" />
+          <Property Name="F5" Type="smallint" />
+          <Property Name="F6" Type="smallint" />
+          <Property Name="F7" Type="smallint" />
+          <Property Name="F8" Type="smallint" />
+          <Property Name="F9" Type="smallint" />
+          <Property Name="F10" Type="smallint" />
+          <Property Name="F11" Type="smallint" />
+          <Property Name="F12" Type="smallint" />
+          <Property Name="F13" Type="smallint" />
+          <Property Name="F14" Type="smallint" />
+          <Property Name="F15" Type="smallint" />
+          <Property Name="F16" Type="smallint" />
+          <Property Name="F17" Type="smallint" />
+          <Property Name="F18" Type="smallint" />
+          <Property Name="F19" Type="smallint" />
+          <Property Name="F20" Type="smallint" />
+          <Property Name="F21" Type="smallint" />
+          <Property Name="F22" Type="smallint" />
+          <Property Name="F23" Type="smallint" />
+          <Property Name="F24" Type="smallint" />
+          <Property Name="F25" Type="smallint" />
+          <Property Name="NUMSAMPLE" Type="smallint" />
+        </EntityType>
+        <EntityContainer Name="Хранилище SvetMillGraphModelContainer">
+          <EntitySet Name="IPMPM" EntityType="Self.IPMPM" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [IPMPM].[ID] AS [ID], 
+    [IPMPM].[KEYF] AS [KEYF], 
+    [IPMPM].[DATAT] AS [DATAT], 
+    [IPMPM].[TAKT] AS [TAKT], 
+    [IPMPM].[IZM] AS [IZM], 
+    [IPMPM].[F1] AS [F1], 
+    [IPMPM].[F2] AS [F2], 
+    [IPMPM].[F3] AS [F3], 
+    [IPMPM].[F4] AS [F4], 
+    [IPMPM].[F5] AS [F5], 
+    [IPMPM].[F6] AS [F6], 
+    [IPMPM].[F7] AS [F7], 
+    [IPMPM].[F8] AS [F8], 
+    [IPMPM].[F9] AS [F9], 
+    [IPMPM].[F10] AS [F10], 
+    [IPMPM].[F11] AS [F11], 
+    [IPMPM].[F12] AS [F12], 
+    [IPMPM].[F13] AS [F13], 
+    [IPMPM].[F14] AS [F14], 
+    [IPMPM].[F15] AS [F15], 
+    [IPMPM].[F16] AS [F16], 
+    [IPMPM].[F17] AS [F17], 
+    [IPMPM].[F18] AS [F18], 
+    [IPMPM].[F19] AS [F19], 
+    [IPMPM].[F20] AS [F20], 
+    [IPMPM].[F21] AS [F21], 
+    [IPMPM].[F22] AS [F22], 
+    [IPMPM].[F23] AS [F23], 
+    [IPMPM].[F24] AS [F24], 
+    [IPMPM].[F25] AS [F25], 
+    [IPMPM].[NUMSAMPLE] AS [NUMSAMPLE]
+    FROM [dbo].[IPMPM] AS [IPMPM]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SvetMill.GraphModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="IPMPM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="KEYF" Type="Int32" />
+          <Property Name="DATAT" Type="DateTime" Precision="3" />
+          <Property Name="TAKT" Type="Int32" />
+          <Property Name="IZM" Type="Int32" />
+          <Property Name="F1" Type="Int16" />
+          <Property Name="F2" Type="Int16" />
+          <Property Name="F3" Type="Int16" />
+          <Property Name="F4" Type="Int16" />
+          <Property Name="F5" Type="Int16" />
+          <Property Name="F6" Type="Int16" />
+          <Property Name="F7" Type="Int16" />
+          <Property Name="F8" Type="Int16" />
+          <Property Name="F9" Type="Int16" />
+          <Property Name="F10" Type="Int16" />
+          <Property Name="F11" Type="Int16" />
+          <Property Name="F12" Type="Int16" />
+          <Property Name="F13" Type="Int16" />
+          <Property Name="F14" Type="Int16" />
+          <Property Name="F15" Type="Int16" />
+          <Property Name="F16" Type="Int16" />
+          <Property Name="F17" Type="Int16" />
+          <Property Name="F18" Type="Int16" />
+          <Property Name="F19" Type="Int16" />
+          <Property Name="F20" Type="Int16" />
+          <Property Name="F21" Type="Int16" />
+          <Property Name="F22" Type="Int16" />
+          <Property Name="F23" Type="Int16" />
+          <Property Name="F24" Type="Int16" />
+          <Property Name="F25" Type="Int16" />
+          <Property Name="NUMSAMPLE" Type="Int16" />
+        </EntityType>
+        <EntityContainer Name="GraphContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="IPMPM" EntityType="Self.IPMPM" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище SvetMillGraphModelContainer" CdmEntityContainer="GraphContext">
+          <EntitySetMapping Name="IPMPM">
+            <EntityTypeMapping TypeName="SvetMill.GraphModel.IPMPM">
+              <MappingFragment StoreEntitySet="IPMPM">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KEYF" ColumnName="KEYF" />
+                <ScalarProperty Name="DATAT" ColumnName="DATAT" />
+                <ScalarProperty Name="TAKT" ColumnName="TAKT" />
+                <ScalarProperty Name="IZM" ColumnName="IZM" />
+                <ScalarProperty Name="F1" ColumnName="F1" />
+                <ScalarProperty Name="F2" ColumnName="F2" />
+                <ScalarProperty Name="F3" ColumnName="F3" />
+                <ScalarProperty Name="F4" ColumnName="F4" />
+                <ScalarProperty Name="F5" ColumnName="F5" />
+                <ScalarProperty Name="F6" ColumnName="F6" />
+                <ScalarProperty Name="F7" ColumnName="F7" />
+                <ScalarProperty Name="F8" ColumnName="F8" />
+                <ScalarProperty Name="F9" ColumnName="F9" />
+                <ScalarProperty Name="F10" ColumnName="F10" />
+                <ScalarProperty Name="F11" ColumnName="F11" />
+                <ScalarProperty Name="F12" ColumnName="F12" />
+                <ScalarProperty Name="F13" ColumnName="F13" />
+                <ScalarProperty Name="F14" ColumnName="F14" />
+                <ScalarProperty Name="F15" ColumnName="F15" />
+                <ScalarProperty Name="F16" ColumnName="F16" />
+                <ScalarProperty Name="F17" ColumnName="F17" />
+                <ScalarProperty Name="F18" ColumnName="F18" />
+                <ScalarProperty Name="F19" ColumnName="F19" />
+                <ScalarProperty Name="F20" ColumnName="F20" />
+                <ScalarProperty Name="F21" ColumnName="F21" />
+                <ScalarProperty Name="F22" ColumnName="F22" />
+                <ScalarProperty Name="F23" ColumnName="F23" />
+                <ScalarProperty Name="F24" ColumnName="F24" />
+                <ScalarProperty Name="F25" ColumnName="F25" />
+                <ScalarProperty Name="NUMSAMPLE" ColumnName="NUMSAMPLE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
